@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-center mt-5 text text-center">
+  <div class="col-3">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+     <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+     <app-text-input formControlName="password" [label]="'Password'" [type]="'password'"></app-text-input>
+      <button [disabled]="loginForm.invalid" class="btn btn-lg btn-primary btn-block w-100 mt-2" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted text-center">© 2021-2022</p>
+    </form>
+  </div>
+</div>
+
